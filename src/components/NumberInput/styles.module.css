@@ -1,0 +1,76 @@
+
+.number_inputs_group{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  height: 100px;
+}
+
+.number_inputs_group__input{
+  display: none;
+}
+
+  
+.number_input_wrapper{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+  
+  color: #fff;
+}
+.number_input__arrow{
+  border: 1px solid transparent;
+  background-color: transparent;
+  cursor: pointer;
+  fill: #fff;
+  transition: fill 0.2s;
+  width: 100%;
+  height: 30px;
+}
+
+.number_input__arrow:hover{
+  fill: #ccc;
+  
+}
+
+.number_input__arrow[data-direction="up"]{
+  bottom: 100%;
+  
+}
+
+.number_input__arrow[data-direction="down"]{
+  top: 100%;
+  
+}
+.number_input__container{
+  overflow: hidden;
+  height: 100%;
+  background-color: rgb(17, 17, 17);
+  perspective: 200px;
+}
+
+.number_input__content{
+  height: 100%;
+  font-size: 20px;
+  display: flex;
+  grid-auto-flow: row;
+  grid-auto-rows: 100%;
+
+  flex-direction: column;
+  transition: transform 0.2s;
+  
+  
+}
+
+.number_toggle__number{
+  flex: 0 0 100%;
+  display: grid;
+  place-content: center;
+  width: 30px;
+  
+  
+}
